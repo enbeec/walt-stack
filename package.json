@@ -1,0 +1,39 @@
+{
+  "name": "walt-stac",
+  "version": "0.1.1",
+  "description": "Boilerplate for Webpack, Alpine.js and TailwindCSS",
+  "scripts": {
+    "dev": "webpack -w --mode=development",
+    "build": "export NODE_ENV=production && webpack"
+  },
+  "author": "Val Currie",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "babel-loader": "^8.2.5",
+    "babel-preset-airbnb": "^5.0.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-import-resolver-webpack": "^0.13.2",
+    "eslint-plugin-import": "^2.26.0",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "postcss-preset-env": "^7.6.0",
+    "prettier": "^2.6.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.3.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.2",
+    "page": "^1.11.6",
+    "tailwindcss": "^3.0.24"
+  }
+}
