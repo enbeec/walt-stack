@@ -1,17 +1,27 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const src = [__dirname, 'src'];
+const dist = [__dirname, 'dist'];
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.js',
+  entry: path.resolve(...src, 'index.js'),
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'ui.js',
+    path: path.resolve(...dist),
+    filename: 'walt.js',
   },
   resolve: {
     extensions: ['.js', '.ts', '.css'],
-    alias: {
-    },
+    alias: {},
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: '[walt]',
+      // uses lodash syntax
+      template: path.resolve(...src, 'index.html'),
+    })
+  ],
   module: {
     rules: [
       {
