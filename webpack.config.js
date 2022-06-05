@@ -11,6 +11,13 @@ module.exports = {
     path: path.resolve(...dist),
     filename: 'walt.js',
   },
+  devServer: {
+    static: {
+      directory: path.resolve(...dist),
+    },
+    compress: true,
+    port: process.env.DEV_PORT || 8080,
+  },
   resolve: {
     extensions: ['.js', '.ts', '.css'],
     alias: {},

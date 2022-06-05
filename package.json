@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "Boilerplate for Webpack, Alpine.js and TailwindCSS",
   "scripts": {
-    "dev": "webpack -w --mode=development",
+    "dev": "webpack serve",
     "build": "export NODE_ENV=production && webpack"
   },
   "author": "Val Currie",
@@ -30,7 +30,8 @@
     "style-loader": "^3.3.1",
     "ts-loader": "^9.3.0",
     "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.1"
   },
   "dependencies": {
     "alpinejs": "^3.10.2",
